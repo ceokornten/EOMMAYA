@@ -17,7 +17,7 @@
 
     <!-- HEADER -->
     <header>
-        <a href="index.html" id="logo"><img src="img/theme-1/logo.png" alt="" /><img class="act" src="img/theme-1/logo-act.png" alt=""/></a>
+        <a href="index.html" id="logo"><img src="img/theme-1/logo.png" alt=""/><img class="act" src="img/theme-1/logo-act.png" alt=""/></a>
         <div class="mob-icon">
             <span></span>
         </div>
@@ -74,9 +74,11 @@
             <!-- BLOCK "TYPE 1" -->
             <div class="block type-1 scroll-to-block" data-id="home">
                 <div class="clip">	
-                    <div class="bg" style="background-image:url(img/content/Home-1/banner_1.jpg);">
-                    </div>
-                    <div class="bg-span"></div>
+                    <video loop autoplay poster="assets/intro_for_ipad.jpg" class="bgvid">
+                        <source src="assets/header-v5-ogg-1.ogg" type="video/ogg">
+                        <source src="assets/header-v5-h264-2.mp4" type="video/mp4">
+                    </video>
+                    <!-- <div class="bg-span"></div> -->
                 </div>
                 <div class="container type-1-text wow flipInX" data-wow-delay="0.3s">
                     <div class="row">
@@ -90,36 +92,7 @@
                         </div>                   
                     </div>
                 </div>
-                <div class="numbers">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_1.jpg" alt="" />
-                                <img class="thumbs-icon" src="img/icon.png" alt=""/>
-                                <span class="num">2489</span>
-                                <span class="num-text">Cups of Coffee</span>
-                            </div>
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_2.jpg" alt=""/>
-                                <img class="thumbs-icon" src="img/icon1.png" alt=""/>
-                                <span class="num">100</span>
-                                <span class="num-text">Happy Users</span>
-                            </div>
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_3.jpg" alt=""/>
-                                <img class="thumbs-icon" src="img/icon2.png" alt=""/>
-                                <span class="num">1823</span>
-                                <span class="num-text">Hours of Work</span>
-                            </div>
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_4.jpg" alt=""/>
-                                <img class="thumbs-icon" src="img/icon3.png" alt=""/>
-                                <span class="num">5024</span>
-                                <span class="num-text">Feedbacks</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="mouse-icon"></div>
             </div>
             <!-- BLOCK "TYPE 1" -->
             
@@ -127,16 +100,16 @@
             <div class="block type-2 scroll-to-block" data-id="about">
                 <div class="container-fluid type-2-text">
                     <div class="row">
-                        <div class="image-block mob-hide wow fadeInLeft" data-wow-delay="0.3s">
-                            <img class="center-image" src="img/content/Home-1/big_content_image_1.jpg" alt=""/>
-                            <a href="#" class="play" data-src="https://www.youtube.com/embed/RqMmtcPjCwA?rel=0"></a>
-                        </div>
-                        <div class="col-md-4 col-md-offset-7 col-sm-12 col-sm-offset-0 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="col-md-4 col-md-offset-1 col-sm-12 col-sm-offset-0 wow fadeInLeft" data-wow-delay="0.3s">
                             <article class="normall">
                                 <h2 class="h2 titel-left">Discover new horizons</h2>
                                 <p>Donec volutpat enim at interdum pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sodales mauris pretium scelerisque lobortis. Aenean venenatis suscipit vehicula. Phasellus condimentum laoreet nibh at consectetur. Suspendisse potenti mauris pretium. Cras sollicitudin lorem risus, sed ultrices odio aliquam at. Mauris posuere diam at enim malesuada, ac malesuada erat auctor. Ut porta mattis tellus eu sagittis.</p>
                                 <a href="#" class="button"><span>learn more</span></a>
                             </article>
+                        </div>
+
+                        <div class="image-block mob-hide"> 
+                            <img alt="" src="img/content/Home-4/big_content_image_1.jpg" class="center-image"/>
                         </div>
                     </div>
                 </div>
@@ -147,8 +120,12 @@
             <div class="block type-2 scroll-to-block" data-id="why">
                 <div class="container-fluid type-2-text">
                     <div class="row">
-                        
-                        <div class="col-md-4 col-md-offset-1 col-sm-12 col-sm-offset-0 wow fadeInLeft" data-wow-delay="0.3s">
+
+                        <div class="image-block mob-hide">
+                            <img alt="" src="img/content/Home-4/big_content_image_2.jpg" class="center-image"/>
+                        </div>
+
+                        <div class="col-md-4 col-md-offset-7 col-sm-12 col-sm-offset-0 wow fadeInRight" data-wow-delay="0.3s">
                             <article class="normall">
                                 <h2 class="h2 titel-left">why our app</h2>
                                 <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor sed. Sed eget justo at erat suscipit tristique sit.</p>
@@ -184,9 +161,6 @@
                             <!-- BLOCK "TYPE 3" -->
                         </div>
 
-                        <div class="image-block mob-hide wow fadeInRight" data-wow-delay="0.3s">
-                            <img class="center-image" src="img/content/Home-1/big_content_image_2.jpg" alt=""/>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -213,91 +187,67 @@
                     </div>
                 </div>
             </div>
-            <!-- BLOCK "TYPE 4" -->
-            
-            <!-- BLOCK "TYPE 1" -->
-            <div class="block type-1 type-1-1 scroll-to-block" data-id="benefits">
-                <div class="clip">	
-                    <div class="bg" style="background-image:url(img/content/Home-1/benefits_bg.jpg);">
+
+            <div class="new-block parallax-bg-text scroll-to-block" data-id="benefits">
+                <div class="clip">  
+                    <div class="bg" style="background-image:url(img/content/Home-4/benefits_bg.jpg);">
                     </div>
                     <div class="bg-span"></div>
                 </div>
-                <div class="container type-1-text">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 type-1-center">
-                            <article class="big white wow flipInX" data-wow-delay="0.3s">
-                                <h2 class="h2 titel-top">take more with us</h2>
-                                <p>Tonsequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor. Praesent condimentum efficitur massa pharetra dolor sed.</p>
-                            </article>
-                            <div class="marvel-device-wrap wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="marvel-device iphone6plus black">
-                                    <div class="top-bar"></div>
-                                    <div class="sleep"></div>
-                                    <div class="volume"></div>
-                                    <div class="camera"></div>
-                                    <div class="sensor"></div>
-                                    <div class="speaker"></div>
-                                    <div class="screen">
-                                        <!-- Content goes here -->
-                                    </div>
-                                    <div class="home"></div>
-                                    <div class="bottom-bar"></div>
-                                </div>
-                                <div class="iphone-image-wrap">
-                                    <div class="iphone-image-wrap-move">
-                                        <img src="img/content/Home-1/benefits_slider_image_1.jpg" alt="" />
-                                        <img src="img/content/Home-1/benefits_slider_image_2.jpg" alt="" />
-                                        <img src="img/content/Home-1/benefits_slider_image_3.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                   
+
+                <div class="container">
+                    <div class="row page-tagline">
+                        <div data-wow-delay="0.3s" class="col-md-12 wow flipInX">
+                            <h2 class="title">take more with us</h2>
+                            <div class="description">Tonsequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor. Praesent condimentum efficitur massa pharetra dolor sed. Tonsequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor. Praesent condimentum efficitur massa pharetra dolor sed.</div>
+                            <a class="button" href="#">learn more</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
-            <!-- BLOCK "TYPE 1" -->
-            
+
             <!-- BLOCK "TYPE 3" -->
-            <div class="block type-3 type-3-1">
-                <div class="container type-3-text">
+            <div class="new-block type-3 type-3-1">
+                <div class="container type-3-text icons-at-the-top">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.3s">
-                            <img src="img/theme-1/icon10.png" alt=""/>
+                        <div data-wow-delay="0.3s" class="col-md-4 col-sm-6 little-img-text-entry wow flipInY">
+                            <img src="img/theme-1/icon10.png" alt="">
                             <article class="small">
                                 <h5 class="h5">online shopping</h5>
                                 <p>Etiam neque tortor, bibendum id maximus vitae, tincidunt id libero. Morbi ac leo vitae sapien rutrum sempe.</p>
                             </article>
                         </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.6s">
-                            <img src="img/theme-1/icon11.png" alt=""/>
+                        <div data-wow-delay="0.6s" class="col-md-4 col-sm-6 little-img-text-entry wow flipInY">
+                            <img src="img/theme-1/icon11.png" alt="">
                             <article class="small">
                                 <h5 class="h5">multimedia archives</h5>
                                 <p>Vestibulum accumsan est malesuada sem auctor, eu aliquet nisi ornare. Aliquam dapibus lectus </p>
                             </article>
                         </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.9s">
-                            <img src="img/theme-1/icon12.png" alt=""/>
+                        <div data-wow-delay="0.9s" class="col-md-4 col-sm-6 little-img-text-entry wow flipInY">
+                            <img src="img/theme-1/icon12.png" alt="">
                             <article class="small">
                                 <h5 class="h5">quick settings</h5>
                                 <p>Fusce ullamcorper turpis at eros blandit, at iaculis eros bibendum. In diam erat, gravida sit amet aliquet vitae</p>
                             </article>
                         </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.3s">
-                            <img src="img/theme-1/icon13.png" alt=""/>
+                        <div data-wow-delay="0.3s" class="col-md-4 col-sm-6 little-img-text-entry wow flipInY">
+                            <img src="img/theme-1/icon13.png" alt="">
                             <article class="small">
                                 <h5 class="h5">global weather</h5>
                                 <p>Mauris aliquam neque risus, eget fermentum ex posuere et. Nam interdum odio ante, nec sollicitudin</p>
                             </article>
                         </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.6s">
-                            <img src="img/theme-1/icon14.png" alt=""/>
+                        <div data-wow-delay="0.6s" class="col-md-4 col-sm-6 little-img-text-entry wow flipInY">
+                            <img src="img/theme-1/icon14.png" alt="">
                             <article class="small">
                                 <h5 class="h5">personal planners</h5>
                                 <p>Ullamcorper turpis at eros blandit, at iaculis eros bibendum. In diam erat, gravida sit amet aliquet vitae</p>
                             </article>
                         </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.9s">
-                            <img src="img/theme-1/icon15.png" alt=""/>
+                        <div data-wow-delay="0.9s" class="col-md-4 col-sm-6 little-img-text-entry wow flipInY">
+                            <img src="img/theme-1/icon15.png" alt="">
                             <article class="small">
                                 <h5 class="h5">your Achievements</h5>
                                 <p>Accumsan est malesuada sem auctor, eu aliquet nisi ornare. Aliquam dapibus lectus dolor, quis pulvinar</p>
@@ -306,34 +256,18 @@
                     </div>
                 </div>
             </div>
-            <div class="clear"></div>
-            <!-- BLOCK "TYPE 3" -->
             
             <!-- BLOCK "TYPE 5" -->
             <div class="block type-5 scroll-to-block" data-id="how-it-work">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="img-wrap-slider">
-                                <div class="img-wrap-move">
-                                    <div class="img-wrap">
-                                        <img src="img/content/Home-1/how_it_work_image.png" alt="" />
-                                    </div>
-                                    <div class="img-wrap">
-                                        <img src="img/content/Home-1/how_it_work_image_2.png" alt="" />
-                                    </div>
-                                    <div class="img-wrap">
-                                        <img src="img/content/Home-1/how_it_work_image_3.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-md-offset-1">
-                            <article class="normall wow fadeInRight" data-wow-delay="0.3s">
+                        
+                        <div class="col-md-5">
+                            <article class="normall wow fadeInLeft" data-wow-delay="0.3s">
                                 <h2 class="h2 titel-left">How it work</h2>
                                 <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor. Praesent condimentum efficitur massa, nec congue sem dapibus sed. Sed eget justo at erat suscipit tristique sit. Curabitur nunc erat, consequat in erat ut, congue bibendum nulla.</p>
                             </article>
-                            <div class="slider register-login wow fadeInRight" data-wow-delay="0.6s">
+                            <div class="slider register-login wow fadeInLeft" data-wow-delay="0.6s">
                                 <div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -362,6 +296,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6 col-md-offset-1">
+                            <div class="triple-images-container">
+                                <img data-wow-delay="0.3s" class="wow flipInY" src="img/triple-image-1.png" alt="" />
+                                <img data-wow-delay="0.6s" class="wow flipInY" src="img/triple-image-2.png" alt="" />
+                                <img data-wow-delay="0.9s" class="wow flipInY" src="img/triple-image-3.png" alt="" />
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
@@ -369,7 +311,12 @@
             <!-- BLOCK "TYPE 5" -->
             
             <!-- BLOCK "TYPE 4" -->
-            <div class="block type-4 type-4-1 scroll-to-block" data-id="tech-specs">
+            <div class="block type-4 type-4-1 parallax-bg-text scroll-to-block" data-id="tech-specs">
+                <div class="clip">  
+                    <div class="bg" style="background-image:url(img/content/Home-4/tech_specs_bg.jpg);">
+                    </div>
+                    <div class="bg-span"></div>
+                </div>
                 <div class="container type-4-text">
                     <div class="row">
                         <div class="col-md-7">
@@ -446,16 +393,55 @@
                 </div>
             </div>
             <!-- BLOCK "TYPE 4" -->
+
+            <!-- BLOCK "TYPE 12" -->
+            <div class="new-block type-12 color-background" style="padding: 70px 0; border: none;">
+                <div class="container">
+
+                    <div class="logos-slider wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="swiper-container horizontal-pagination" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="3" data-md-slides="5" data-lg-slides="6">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"> 
+                                    <img src="img/logo-1.png" alt="" />
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <img src="img/logo-2.png" alt="" />
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <img src="img/logo-3.png" alt="" />
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <img src="img/logo-4.png" alt="" />
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <img src="img/logo-5.png" alt="" />
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <img src="img/logo-6.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="pagination"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
             
             <!-- BLOCK "TYPE 6" -->
-            <div class="block type-6 scroll-to-block" data-id="take-a-tour">
+            <div class="block type-6 parallax-bg-text scroll-to-block" data-id="take-a-tour">
+                <div class="clip">  
+                    <div class="bg" style="background-image:url(img/content/Home-4/take_a_tour_bg.jpg);">
+                    </div>
+                    <div class="bg-span"></div>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
                             <article class="normall">
                                 <h2 class="h2 titel-left">take a toure</h2>
                                 <p>Integer elementum efficitur quam et vulputate. Morbi porta, lacus eget consectetur cursus, justo purus porttitor lacus, sit amet suscipit nibh velit eget lectus. Aenean placerat ex et lacus pretium condimentum. Maecenas hendrerit semper sapien. Maecenas lectus mauris, fringilla et odio a, bibendum imperdiet nibh. Aenean eu scelerisque tellus.</p>
-                                <a href="#" class="button black"><span>view video</span></a>
+                                <a href="#" class="button"><span>view video</span></a>
                             </article>
                         </div>
                         <div class="col-md-8 wow fadeInUp" data-wow-delay="0.6s">
@@ -464,35 +450,35 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_1.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_1.jpg" alt="" />    
                                             </a>
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_2.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_2.jpg" alt="" />   
                                             </a>
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_3.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_3.jpg" alt="" />    
                                             </a>
                                         </div>
                                         <div class="swiper-slide">
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_4.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_4.jpg" alt="" />  
                                             </a>
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_5.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_5.jpg" alt="" />    
                                             </a>
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_6.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_6.jpg" alt="" />    
                                             </a>    
                                         </div>
                                         <div class="swiper-slide">
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_7.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_7.jpg" alt="" />    
                                             </a>
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_8.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_8.jpg" alt="" />    
                                             </a>
                                             <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_9.jpg" alt="" />
+                                                <img src="img/content/Home-1/screens_slider_image_9.jpg" alt="" />    
                                             </a>    
                                         </div>
                                     </div>
